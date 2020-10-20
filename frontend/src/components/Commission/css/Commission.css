@@ -1,0 +1,161 @@
+.debug {
+    position: absolute;
+    bottom: 0;
+}
+
+#Commission h1 {
+    margin-top: 7%;
+    font-size: 2.7em;
+}
+
+#Commission {
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.commission-options {
+    position: absolute;
+    left: 2%;
+
+    height: 500px;
+    width: 800px;
+}
+
+.options-display {
+    position: absolute;
+    right: 2%;
+
+    height: 575px;
+    width: 800px;
+}
+
+.options-display div {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.radio-options {
+    width: 400px;
+
+    text-align: left;
+}
+
+/*  Customizing Radio & Checkbox buttons.
+    Move to seperate css file later
+*/
+
+.radio-options-container {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    font-size: 1.4em;
+    user-select: none;
+}
+
+.check-options-container {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    font-size: 1.4em;
+    user-select: none;
+}
+
+.radio-options-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check-options-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkcircle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #aac2c0;
+    border-radius: 50%;
+}
+
+.checkbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #aac2c0;
+}
+
+.radio-options-container:hover input ~ .checkcircle {
+    background-color: #737e7d;;
+}
+
+.check-options-container:hover input ~ .checkbox {
+    background-color: #737e7d;;
+}
+
+.radio-options-container input:checked ~ .checkcircle {
+    background-color: #444b4a;;
+}
+
+.check-options-container input:checked ~ .checkbox {
+    background-color: #444b4a;;
+}
+
+.checkcircle:after .checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-options-container input:checked ~ .checkcircle:after {
+    display: block;
+}
+
+.check-options-container input:checked ~ .checkbox:after {
+    display: block;
+}
+
+.radio-options-container .checkcircle:after .checkbox:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+/* End of Button Customization */
+
+.price-total-container {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+
+    text-align: left;
+
+    height: 100px;
+    width: 800px;
+}
+
+.price {
+    margin: auto;
+
+    width: 100px;
+}
+
+.checkout {
+    position: absolute;
+    right: 20.5%;
+    bottom: 10%;
+}
