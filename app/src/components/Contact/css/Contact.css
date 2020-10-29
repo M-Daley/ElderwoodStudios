@@ -1,0 +1,121 @@
+.contact-container {
+    position: relative;
+    margin: auto;
+
+    height: 60%;
+    width: 80%;
+}
+
+.contact-form-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 50%;
+    height: 100%;
+
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.25em;
+
+    background: rgb(115, 126, 125);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.12);
+
+    border-radius: 3px;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+    width: 48%;
+}
+
+.input-fields input,
+.msg textarea {
+    margin: 10px 0;
+    width: 100%;
+    
+    padding: 1em 0 0.15em 1em ;
+
+    color: white;
+    background: transparent;
+
+    font-size: 1.1em;
+
+    border: 0;
+    border-bottom: 2px solid #2a2e2e;
+}
+
+.msg textarea {
+    height: 80%;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    font-size: 1.4em;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #fff;
+}
+
+.form-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 1em 0.5em;
+    width: 25%;
+
+    border-radius: 7px;
+    border: none;
+
+    color: #000;
+    background: #add1ce;
+
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background: #d4fffb;
+}
+
+.commission-review-container {
+    position: absolute;
+    left: 0;
+    
+    height: 100%;
+    width: 25%;
+}
+
+.checkout-options {
+    position: absolute;
+    left: 3%;
+    bottom: 10%;
+    
+    text-align: left;
+
+    height: 40%;
+    width: 45%;
+    z-index: 10;
+}
+
+.commission-preview {
+    text-align: center;
+    margin-top: 20%;
+}
