@@ -12,8 +12,8 @@ export const Navigation: React.FC = () => (
         </div>
 
         <ul className="nav-links">
-            <li className="link">Contact</li>
-            <li className="link">About</li>
+            <li className="link"><a href="#Contact">Contact</a></li>
+            <li className="link"><a href="#About">About</a></li>
             <li className="link"><a href="#Commission">Commission</a></li>
             <li className="link"><a href="#Gallery">Gallery</a></li>
             <li className="link"><a href="#Home">Home</a></li>

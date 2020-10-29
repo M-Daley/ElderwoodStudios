@@ -6,7 +6,9 @@ import {
   Navigation,
   Home,
   Gallery,
-  Commission
+  Commissions,
+  About,
+  Contact
 } from './components/App';
 
 function App() {
@@ -16,7 +18,9 @@ function App() {
         <Navigation />
         <Home />
         <Gallery />
-        <Commission />
+        <Commissions />
+        <About />
+        <Contact />
     </div>
   );
 }
